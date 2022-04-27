@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/reservations', function () {
-    return view('reservations');
-})->middleware(['auth'])->name('reservations');
+Route::get('/bookings', function () {
+    return view('bookings');
+})->middleware(['auth'])->name('bookings');
 
 require __DIR__.'/auth.php';

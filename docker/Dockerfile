@@ -27,8 +27,5 @@ RUN apt-get install --no-install-recommends -y  \
     npm \
     git
 
-
 # Change the current working directory
 WORKDIR /var/www
-
-

@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import ReservationsIndex from '../components/reservations/Index.vue'
+import BookingsIndex from '../components/bookings/Index.vue'
 
 const routes = [
     {
-        path: '/reservations',
-        name: 'reservations.index',
-        component: ReservationsIndex
+        path: '/bookings',
+        name: 'bookings.index',
+        component: BookingsIndex
     }
 ];
 

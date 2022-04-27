@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Reservation;
+use App\Models\Room;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class ReservationPolicy
+class RoomPolicy
 {
     use HandlesAuthorization;
 
@@ -25,10 +25,10 @@ class ReservationPolicy
      * Determine whether the user can view the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\Room  $room
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Reservation $reservation)
+    public function view(User $user, Room $room)
     {
         //
     }
@@ -48,10 +48,10 @@ class ReservationPolicy
      * Determine whether the user can update the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\Room  $room
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function update(User $user, Reservation $reservation)
+    public function update(User $user, Room $room)
     {
         //
     }
@@ -60,10 +60,10 @@ class ReservationPolicy
      * Determine whether the user can delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\Room  $room
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function delete(User $user, Reservation $reservation)
+    public function delete(User $user, Room $room)
     {
         //
     }
@@ -72,10 +72,10 @@ class ReservationPolicy
      * Determine whether the user can restore the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\Room  $room
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function restore(User $user, Reservation $reservation)
+    public function restore(User $user, Room $room)
     {
         //
     }
@@ -84,10 +84,10 @@ class ReservationPolicy
      * Determine whether the user can permanently delete the model.
      *
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Reservation  $reservation
+     * @param  \App\Models\Room  $room
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function forceDelete(User $user, Reservation $reservation)
+    public function forceDelete(User $user, Room $room)
     {
         //
     }
