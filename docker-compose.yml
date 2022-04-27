@@ -1,0 +1,36 @@
+version: "2"
+
+services:
+    app:
+        container_name: gifts_app
+        build: ./docker
+        ports:
+            - "${APP_PORT}:80"
+        volumes:
+            - ./:/var/www
+    db:
+        container_name: gifts_db
+        image: mysql
+        ports:
+            - "${DB_PORT}:3306"
+        environment:
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+        volumes:
+            - mysql-data:/var/lib/mysql
+    phpmyadmin:
+        container_name: gifts_phpmyadmin
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db:db
+        ports:
+            - "${PHP_MY_ADMIN_PORT}:80"
+        environment:
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+
+volumes:
+    mysql-data:
