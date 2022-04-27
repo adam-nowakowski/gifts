@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/reservations', function () {
+    return view('reservations');
+})->middleware(['auth'])->name('reservations');
+
+require __DIR__.'/auth.php';

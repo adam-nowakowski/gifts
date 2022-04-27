@@ -27,8 +27,8 @@ RUN apt-get install --no-install-recommends -y  \
     npm \
     git
 
-# Permissions
-RUN chown -R www-data:www-data /var/www
 
 # Change the current working directory
 WORKDIR /var/www
+
+
