@@ -17,7 +17,8 @@ Route::middleware('auth:sanctum')->group(function () {
     ]);
 
     Route::apiResource('rooms', RoomController::class)->only([
-        'index'
+        'index',
+        'store'
     ]);
 });
 
