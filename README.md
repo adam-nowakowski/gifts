@@ -19,7 +19,7 @@ More info in postman collection.
 
 ## How to run
 
-Sun in project root path command:
+Copy the .env file and run in project root path command:
 
 _sh setup.sh_
 
