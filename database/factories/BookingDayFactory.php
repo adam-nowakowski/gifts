@@ -12,8 +12,8 @@ class BookingDayFactory extends Factory
     {
         return [
             'date' => $this->faker->date,
-            'room_id' => Room::inRandomOrder()->value('id'),
-            'booking_id' => Booking::inRandomOrder()->value('id'),
+            'room_id' => Room::inRandomOrder()->value('id') ?: $this->faker->numberBetween(),
+            'booking_id' => Booking::inRandomOrder()->value('id') ?: $this->faker->numberBetween(),
         ];
     }
 }

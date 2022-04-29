@@ -10,10 +10,6 @@ class ReservationAvailability
 {
     public static function getPeriodDays(string $from, string $to): array
     {
-        if ($from !== $to) {
-            $to = Carbon::parse($to)->addDay();
-        }
-
         return CarbonPeriod::create($from, $to)->toArray();
     }
 

@@ -7,6 +7,8 @@ use Illuminate\Contracts\Validation\Rule;
 
 class CheckRoomAvailability implements Rule
 {
+    public const BASE_ERROR_MESSAGE = 'This room is unavailable in day(s): ';
+
     private array $unavailableDays;
 
     public function __construct(private string $from, private string $to)
@@ -26,6 +28,6 @@ class CheckRoomAvailability implements Rule
 
     public function message(): string
     {
-        return 'This room is unavailable in day(s): ' . implode(', ', $this->unavailableDays);
+        return self::BASE_ERROR_MESSAGE . implode(', ', $this->unavailableDays);
     }
 }
