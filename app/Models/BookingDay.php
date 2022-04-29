@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Eloquent;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,11 +19,14 @@ class BookingDay extends Model
 
     protected $fillable = [
         'date',
-        'reservations',
-        'bookings_ids',
+        'room_id',
+        'booking_id',
     ];
 
-    protected $casts = [
-        'bookings_ids' => 'array'
-    ];
+    public function date(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($value) => Carbon::parse($value)->format('d F Y'),
+        );
+    }
 }

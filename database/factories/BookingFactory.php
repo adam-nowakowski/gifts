@@ -19,7 +19,7 @@ class BookingFactory extends Factory
             'room_id' => Room::inRandomOrder()->value('id') ?: $this->faker->numberBetween(),
             'from' => $from,
             'to' => $to,
-            'nights' => $to->diffInDays($from)
+            'days' => $to->diffInDays($from)
         ];
     }
 }

@@ -13,9 +13,4 @@ class RoomController extends Controller
     {
         return RoomResource::collection(Room::get());
     }
-
-    public function show(Room $room): RoomResource
-    {
-        return new RoomResource($room);
-    }
 }

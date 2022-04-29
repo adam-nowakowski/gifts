@@ -16,7 +16,7 @@
         </th>
         <th class="px-6 py-3">
           <span>
-            Nights
+            Days
           </span>
         </th>
         <th class="px-6 py-3">
@@ -50,7 +50,7 @@
             {{ item.id }}
           </td>
           <td class="px-6 py-4">
-            {{ item.nights }}
+            {{ item.days }}
           </td>
           <td class="px-6 py-4">
             {{ item.room_name }}

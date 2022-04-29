@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\BookingDay;
 use Illuminate\Database\Seeder;
 
 class BookingDaySeeder extends Seeder
@@ -14,6 +14,6 @@ class BookingDaySeeder extends Seeder
      */
     public function run()
     {
-        //
+        BookingDay::factory()->create();
     }
 }

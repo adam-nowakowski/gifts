@@ -10,10 +10,14 @@ Route::middleware('auth:sanctum')->group(function () {
         return $request->user();
     });
 
-    Route::apiResource('bookings', BookingController::class);
-    Route::apiResource('rooms', RoomController::class)->only([
+    Route::apiResource('bookings', BookingController::class)->only([
         'index',
-        'show'
+        'store',
+        'destroy'
+    ]);
+
+    Route::apiResource('rooms', RoomController::class)->only([
+        'index'
     ]);
 });
 

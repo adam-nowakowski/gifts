@@ -10,7 +10,7 @@ class BookingResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'nights' => $this->nights,
+            'days' => $this->days,
             'room_id' => $this->room_id,
             'room_name' => $this->room->name,
             'from' => $this->from,

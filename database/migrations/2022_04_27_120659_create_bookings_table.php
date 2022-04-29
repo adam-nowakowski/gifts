@@ -14,7 +14,7 @@ return new class extends Migration
             $table->integer('room_id');
             $table->date('from');
             $table->date('to');
-            $table->integer('nights');
+            $table->integer('days');
             $table->timestamps();
         });
     }

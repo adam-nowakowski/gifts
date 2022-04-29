@@ -3,16 +3,17 @@
 namespace Database\Factories;
 
 use App\Models\Booking;
+use App\Models\Room;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BookingDayFactory extends Factory
 {
-    public function definition()
+    public function definition(): array
     {
         return [
             'date' => $this->faker->date,
-            'reservations' => $this->faker->numberBetween(),
-            'bookings_ids' => Booking::get()->toArray(),
+            'room_id' => Room::inRandomOrder()->value('id'),
+            'booking_id' => Booking::inRandomOrder()->value('id'),
         ];
     }
 }

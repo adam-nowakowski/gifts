@@ -11,8 +11,8 @@ return new class extends Migration
         Schema::create('booking_days', function (Blueprint $table) {
             $table->increments('id');
             $table->date('date');
-            $table->integer('reservations');
-            $table->json('bookings_ids');
+            $table->integer('room_id');
+            $table->integer('booking_id');
         });
     }
 
