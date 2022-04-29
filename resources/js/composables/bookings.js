@@ -48,6 +48,10 @@ export default function useBookings() {
         }
     }
 
+    const destroyBooking = async (id) => {
+        await axios.delete(`/api/bookings/${id}`)
+    }
+
     return {
         errors,
         booking,
@@ -55,6 +59,7 @@ export default function useBookings() {
         getBooking,
         getBookings,
         storeBooking,
-        updateBooking
+        updateBooking,
+        destroyBooking
     }
 }
