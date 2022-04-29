@@ -17,8 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/bookings', function () {
-    return view('bookings');
-})->middleware(['auth'])->name('bookings');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+/*
+ * For Vue Router
+ * */
+Route::view('/{any}', 'dashboard')
+    ->middleware(['auth'])
+    ->where('any', '.*');
 
 require __DIR__.'/auth.php';

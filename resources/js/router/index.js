@@ -4,7 +4,7 @@ import BookingsIndex from '../components/bookings/Index.vue'
 
 const routes = [
     {
-        path: '/bookings',
+        path: '/dashboard',
         name: 'bookings.index',
         component: BookingsIndex
     }

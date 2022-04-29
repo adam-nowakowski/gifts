@@ -24566,7 +24566,7 @@ var _hoisted_1 = {
   "class": "overflow-hidden overflow-x-auto min-w-full align-middle sm:rounded-md"
 };
 var _hoisted_2 = {
-  "class": "min-w-full border divide-y divide-gray-200"
+  "class": "min-w-full w-100 border divide-y divide-gray-200"
 };
 
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
@@ -24905,7 +24905,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var routes = [{
-  path: '/bookings',
+  path: '/dashboard',
   name: 'bookings.index',
   component: _components_bookings_Index_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
 }];
@@ -43134,13 +43134,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Index_vue_vue_type_template_id_e8d073b0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=e8d073b0 */ "./resources/js/components/bookings/Index.vue?vue&type=template&id=e8d073b0");
 /* harmony import */ var _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js */ "./resources/js/components/bookings/Index.vue?vue&type=script&lang=js");
-/* harmony import */ var _var_www_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _home_anowakowski_server_gifts_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_var_www_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_e8d073b0__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/bookings/Index.vue"]])
+const __exports__ = /*#__PURE__*/(0,_home_anowakowski_server_gifts_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_e8d073b0__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/bookings/Index.vue"]])
 /* hot reload */
 if (false) {}
 

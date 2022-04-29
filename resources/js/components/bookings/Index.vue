@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden overflow-x-auto min-w-full align-middle sm:rounded-md">
-    <table class="min-w-full border divide-y divide-gray-200">
+    <table class="min-w-full w-100 border divide-y divide-gray-200">
       <thead>
       <tr>
         <th class="px-6 py-3 bg-gray-50">
