@@ -1,5 +1,11 @@
 <template>
-  <div class="overflow-hidden overflow-x-auto min-w-full align-middle sm:rounded-md">
+  <div class="text-right mb-3">
+    <span class="px-4 py-2 bg-info">
+      <router-link :to="{ name: 'bookings.create' }" class="text-sm text-white font-medium">New reservation</router-link>
+    </span>
+  </div>
+
+  <div>
     <table class="min-w-full w-100 border divide-y divide-gray-200">
       <thead>
       <tr>

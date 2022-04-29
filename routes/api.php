@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\BookingController;
+use App\Http\Controllers\Api\RoomController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -10,5 +11,9 @@ Route::middleware('auth:sanctum')->group(function () {
     });
 
     Route::apiResource('bookings', BookingController::class);
+    Route::apiResource('rooms', RoomController::class)->only([
+        'index',
+        'show'
+    ]);
 });
 
